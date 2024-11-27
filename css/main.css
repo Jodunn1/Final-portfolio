@@ -17,7 +17,7 @@ body {
 
 /*** Header Styles ***/
 .homepage-hero .content-wrapper {
-    height: 2900px;
+    height: 2400px;
 }
 
 .initial {
@@ -47,7 +47,7 @@ header h2 {
     clear: both;
     font-size: 120px;
     margin: 0;
-    padding: 1000px 0px 0px 50px;
+    padding: 900px 0px 0px 50px;
     color: white;
 }
 
@@ -107,7 +107,7 @@ header h3 {
     flex-direction: row;
     width: auto;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 40px;
     align-items: center;
     margin-top: 15px;
     float: right;
@@ -181,7 +181,7 @@ header h3 {
   #particles-js {
     position: absolute;
     width: 1300px;
-    height: 3100px;
+    height: 2700px;
     background-color: #00000000;
     background-image: url("");
     background-repeat: no-repeat;
