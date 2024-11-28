@@ -175,13 +175,12 @@ header h3 {
 
   canvas {
     display: block;
-    vertical-align: bottom;
   } 
 
   #particles-js {
     position: absolute;
     width: 1300px;
-    height: 2700px;
+    height: 2900px;
     background-color: #00000000;
     background-image: url("");
     background-repeat: no-repeat;
@@ -189,6 +188,142 @@ header h3 {
     background-position: 50% 50%;
     z-index: -1;
     }
+
+    /*** About Me ***/
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      font-size: 120px;
+      color: white;
+      margin-left: 230px;
+      width: 1300px;
+    }
+
+    .about-me::after {
+      content: "";
+      width: 530px;
+      height: 50px;
+      background-color: #2f81f7;
+      z-index: -1;
+      right: 470px;
+      top: 100px;
+      position: relative;
+    }
+
+    #about .about-desc, .fun-fact-desc {
+      width: 1000px;
+      height: 500px;
+      font-size: 40px;
+      text-align: flex-start;
+      display: flex;
+      justify-content: center;
+      margin-left: 190px;
+      margin-top: 0px;
+      color: white;
+      font-weight: 100;
+      font-style: normal;
+    }
+
+
+    .fun-fact::after {
+      content: "";
+      width: 300px;
+      height: 40px;
+      background-color: #2f81f7;
+      z-index: -1;
+      right: 245px;
+      top: 55px;
+      position: relative;
+    }
+
+    .fun-fact {
+      display: flex;
+      justify-content: center;
+      font-size: 70px;
+      color: white;
+      margin-left: 140px;
+      width: 1300px;
+    }
+
+    .about-desc::before {
+      content: "";
+      width: 250px;
+      height: 30px;
+      background-color: #2f81f7;
+      z-index: 5;
+      right: 50px;
+      top: -50px;
+      position: relative;
+      border-radius: 50px;
+    }
+
+    .about-desc::after {
+      content: "";
+      width: 400px;
+      height: 49px;
+      background-color: #ffffff00;
+      z-index: 5;
+      right: 1011px;
+      top: -59px;
+      position: relative;
+      border-radius: 50px;
+      box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
+    }
+
+    .fun-fact-desc::before {
+      content: "";
+      width: 10px;
+      height: 940px;
+      background-color: white;
+      z-index: 5;
+      right: 35px;
+      bottom: 722px;
+      position: relative;
+    }
+
+    .fun-fact-desc::after {
+      content: "";
+      width: 30px;
+      height: 940px;
+      background-color: white;
+      z-index: 6;
+      right: 1030px;
+      bottom: 722px;
+      position: relative;
+      transform-origin: top;
+      animation: animate 5s linear infinite;
+    }
+
+    @keyframes animate {
+      0%,20%
+      {
+        transform: scaleY(0);
+        transform-origin: top;
+      }
+      40.000001%,60%
+      {
+        transform: scaleY(1);
+        transform-origin: bottom;
+      }
+      80%, 100%
+      {
+        transform: scaleY(0);
+        transform-origin: bottom;
+      }
+      40%
+      {
+        transform: scaleY(1);
+        transform-origin: top;
+      }
+      
+      
+    }
+
+
+    
+
+    
 
   
     
