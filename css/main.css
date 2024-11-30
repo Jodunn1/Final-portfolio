@@ -59,10 +59,6 @@ header h2 {
     color: #2f81f7;
 }
 
-.typed-fade-out {
-    ;
-}
-
 .blue {
     color: #2f81f7;
     transition: all 0.2s;
@@ -193,7 +189,7 @@ header h3 {
   #particles-js {
     position: absolute;
     width: 1300px;
-    height: 2900px;
+    height: 5000px;
     background-color: #00000000;
     background-image: url("");
     background-repeat: no-repeat;

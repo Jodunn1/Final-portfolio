@@ -240,34 +240,3 @@
   </body>
 </html>
 
-document.addEventListener("DOMContentLoaded", () => {
-
-	// Use Intersection Observer to determine if objects are within the viewport
-	const observer = new IntersectionObserver(entries => {
-        const homepage = document.querySelector('.homepage-hero');
-        const homeblue = document.querySelector('.home-blue');
-	  entries.forEach(entry => {
-		if (entry.isIntersecting) {
-		  entry.target.classList.add('.in-view');
-          entry.target.classList.remove('.no-view');
-            if (homepage.classList.contains('.in-view')) {
-                homeblue.classList.add('blue');
-            } 
-		  return;
-		} else {
-            entry.target.classList.remove('in-view');
-        entry.target.classList.add('no-view');
-        if (homepage.classList.contains('.no-view')) {
-            homeblue.classList.remove('blue');
-        }
-        }
-	  });
-	});
-
-	// Get all the elements with the .animate class applied
-	const allAnimatedElements = document.querySelectorAll('.home');
-
-	// Add the observer to each of those elements
-	allAnimatedElements.forEach((element) => observer.observe(element));
-
-}); 
