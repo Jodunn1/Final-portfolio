@@ -1,5 +1,6 @@
 /**** Mobile Styles ****/
 
+
 /*** Global Styles ***/ 
 body {
   font-family: "Space Grotesk", sans-serif;
@@ -24,19 +25,7 @@ body {
    padding-top: 300px;
 }
 
-.initial {
-    background-color: #2d3641;
-    border-radius: 14px;
-    color: #2f81f7;
-    font-size: 50px;
-    font-family: "Yellowtail", cursive;
-    font-style: normal;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    float: left;
-    margin-right: 80px;
-    padding: 15px 18px 15px 15px;
-  }
+
 
 .full-name {
     width: 0px;
@@ -114,20 +103,19 @@ header h3 {
 .input {
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 1200px;
     justify-content: center;
     border-radius: 40px;
     align-items: center;
     margin-top: 15px;
     float: right;
-    margin-right: 70px;
     background-color: #1a1f24;
     width: 1280px;
-    margin-right: 12px;
     margin-left: 5px;
     position: fixed;
-    padding: 10px 0;
+    padding: 30px 0;
     z-index: 20;
+    left: 10px;
   }
 
   
@@ -141,7 +129,7 @@ header h3 {
     gap: 5px;
     cursor: pointer;
     border-radius: 4px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 40px;
     transition: .5s;
   }
   
@@ -167,6 +155,7 @@ header h3 {
     border-radius: 5px;
     opacity: 0;
   }
+
   
   .value:focus::before,
   .value:active::before {
@@ -183,6 +172,7 @@ header h3 {
     margin: 0px;
     text-decoration: none;
     color: white;
+    font-weight: 500;
   }
 
 
@@ -209,10 +199,12 @@ header h3 {
       width: 1300px;
     }
 
-    .about .content-wrapper {
+    #about .content-wrapper {
       height: 1900px;
       padding-top: 300px;
+      overflow: hidden;
     }
+
 
     .about-me::after {
       content: "";
@@ -343,6 +335,20 @@ header h3 {
         transform-origin: top;
       }
     }
+
+/*** Skills section ***/
+
+.skills h3 {
+  color: white;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-list h2 {
+  color: white;
+  font-size: 60px;
+}
 
 
     
