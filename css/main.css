@@ -17,11 +17,15 @@ body {
 
 /*** Header Styles ***/
 .homepage-hero .content-wrapper {
-    height: 2400px;
+    height: 2100px;
+}
+
+#about .content-wrapper {
+   padding-top: 300px;
 }
 
 .initial {
-    background-color: #1b1f24;
+    background-color: #2d3641;
     border-radius: 14px;
     color: #2f81f7;
     font-size: 50px;
@@ -55,6 +59,15 @@ header h2 {
     color: #2f81f7;
 }
 
+.typed-fade-out {
+    ;
+}
+
+.blue {
+    color: #2f81f7;
+    transition: all 0.2s;
+}
+
 
 header h3 {
     font-family: "Space Grotesk", sans-serif;
@@ -77,7 +90,7 @@ header h3 {
   margin-left: 390px;
   animation-name: moveInBottom;
   animation-duration: 0.7s;
-  animation-delay: 2.7s;
+  animation-delay: 1.8s;
   animation-fill-mode: backwards;
   cursor: pointer;
 }
@@ -112,7 +125,7 @@ header h3 {
     margin-top: 15px;
     float: right;
     margin-right: 70px;
-    background-color: #090a0c;
+    background-color: #1a1f24;
     width: 1280px;
     margin-right: 12px;
     margin-left: 5px;
@@ -133,16 +146,17 @@ header h3 {
     cursor: pointer;
     border-radius: 4px;
     margin: 0 10px 0 10px;
+    transition: .5s;
   }
   
   .value:not(:active):hover,
   .value:focus {
-    background-color: #21262c;
+    background-color: #2b323a;
   }
   
   .value:focus,
   .value:active {
-    background-color: #1a1f24;
+    background-color: #2b333b;
     outline: none;
   }
   
@@ -167,15 +181,14 @@ header h3 {
     width: 2px;
   }
 
-  .input .value p {
+  .input .value a {
     font-size: 40px;
     font-family: "Space Grotesk", sans-serif;
     margin: 0px;
+    text-decoration: none;
+    color: white;
   }
 
-  canvas {
-    display: block;
-  } 
 
   #particles-js {
     position: absolute;
@@ -198,6 +211,11 @@ header h3 {
       color: white;
       margin-left: 230px;
       width: 1300px;
+    }
+
+    .about .content-wrapper {
+      height: 1900px;
+      padding-top: 300px;
     }
 
     .about-me::after {
@@ -223,6 +241,11 @@ header h3 {
       color: white;
       font-weight: 100;
       font-style: normal;
+    }
+
+    .fun-fact-desc {
+      margin-left: 70px;
+      width: 1100px;
     }
 
 
@@ -251,7 +274,7 @@ header h3 {
       width: 250px;
       height: 30px;
       background-color: #2f81f7;
-      z-index: 5;
+      z-index: 10;
       right: 50px;
       top: -50px;
       position: relative;
@@ -263,7 +286,7 @@ header h3 {
       width: 400px;
       height: 49px;
       background-color: #ffffff00;
-      z-index: 5;
+      z-index: 9;
       right: 1011px;
       top: -59px;
       position: relative;
@@ -273,41 +296,56 @@ header h3 {
 
     .fun-fact-desc::before {
       content: "";
-      width: 10px;
-      height: 940px;
-      background-color: white;
+      width: 600px;
+      height: 1040px;
       z-index: 5;
-      right: 35px;
-      bottom: 722px;
+      right: 7px;
+      bottom: 762px;
       position: relative;
+      background-color: black;
+      animation: animate1 8s ease-in infinite;
+      transform-origin: top;
     }
 
     .fun-fact-desc::after {
       content: "";
-      width: 30px;
-      height: 940px;
+      width: 45px;
+      height: 980px;
       background-color: white;
-      z-index: 6;
-      right: 1030px;
+      z-index: 4;
+      right: 1008px;
       bottom: 722px;
       position: relative;
       transform-origin: top;
-      animation: animate 5s linear infinite;
+      animation: animate 8s ease-out infinite;
+      box-shadow: 0 20px 50px 9px #2f81f7;
+    }
+
+    .fun-fact::before {
+        content: "";
+        width: 3px;
+        height: 980px;
+        right: 814px;
+        top: 2766px;
+        position: absolute;
+        background-color: white;
+        z-index: 6;
     }
 
     @keyframes animate {
-      0%
+      0%,20%
       {
         transform: scaleY(0);
         transform-origin: top;
       }
-      50%
+    }
+
+    @keyframes animate1 {
+      0%, 20% 
       {
-        transform: scaleY(1);
+        transform: scaleY(0);
         transform-origin: top;
       }
-      
-      
     }
 
 
