@@ -25,13 +25,6 @@ body {
    padding-top: 300px;
 }
 
-
-
-.full-name {
-    width: 0px;
-    visibility: hidden;
-}
-
 header h2 {
     font-family: "Space Grotesk", sans-serif;
     font-style: normal;
