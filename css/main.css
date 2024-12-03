@@ -7,6 +7,8 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: #000000;
+  margin: 0;
+  width: 1300px;
 }
 
 .content-wrapper {
@@ -21,9 +23,6 @@ body {
     height: 2100px;
 }
 
-#about .content-wrapper {
-   padding-top: 300px;
-}
 
 header h2 {
     font-family: "Space Grotesk", sans-serif;
@@ -52,8 +51,8 @@ header h3 {
     font-style: normal;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 45px;
+    margin-top: 40px;
     color: white;
     width: 1280px;
     text-align: center;
@@ -85,21 +84,21 @@ header h3 {
   }
 }
 
-.button-wrapper h3 {
+.button-wrapper a {
   padding-left: 50px;
   margin: 0;
   color: #2f81f7;
+  text-decoration: none;
+  font-size: 40px;
 }
-
-
 
 .input {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    border-radius: 40px;
+    border-radius: 20px;
     align-items: center;
     float: right;
     background-color: #1a1f24;
@@ -121,8 +120,9 @@ header h3 {
     position: relative;
     gap: 5px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: .5s;
+    margin: 0px 30px;
   }
   
   .value:not(:active):hover,
@@ -171,7 +171,7 @@ header h3 {
   #particles-js {
     position: absolute;
     width: 1300px;
-    height: 5000px;
+    height: 9000px;
     background-color: #00000000;
     background-image: url("");
     background-repeat: no-repeat;
@@ -187,12 +187,11 @@ header h3 {
       justify-content: center;
       font-size: 120px;
       color: white;
-      margin-left: 230px;
       width: 1300px;
     }
 
-    #about .content-wrapper {
-      height: 1600px;
+    .about .content-wrapper {
+      height: 1500px;
       padding-top: 300px;
       overflow: hidden;
     }
@@ -200,44 +199,44 @@ header h3 {
 
     .about-me::after {
       content: "";
-      width: 530px;
+      width: 520px;
       height: 50px;
       background-color: #2f81f7;
       z-index: -1;
-      right: 470px;
-      top: 100px;
-      position: relative;
+      right: -5px;
+      top: 2580px;
+      position: absolute;
     }
 
-    #about .about-desc, .fun-fact-desc {
-      width: 1000px;
-      height: 500px;
-      font-size: 40px;
-      text-align: flex-start;
-      display: flex;
-      justify-content: center;
-      margin-left: 190px;
-      margin-top: 0px;
-      color: white;
-      font-weight: 100;
-      font-style: normal;
-    }
-
-    .fun-fact-desc {
-      margin-left: 70px;
+    .about-desc-container,
+    .fun-fact-desc-container {
       width: 1100px;
     }
 
+    .desc-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-desc, .fun-fact-desc {
+      height: 500px;
+      font-size: 40px;
+      color: white;
+      font-weight: 400;
+      margin: 0 0 0 180px;
+    }
 
     .fun-fact::after {
       content: "";
-      width: 300px;
+      width: 280px;
       height: 40px;
       background-color: #2f81f7;
       z-index: -1;
-      right: 245px;
-      top: 55px;
-      position: relative;
+      right: 150px;
+      top: 3339px;
+      position: absolute;
     }
 
     .fun-fact {
@@ -245,57 +244,60 @@ header h3 {
       justify-content: center;
       font-size: 70px;
       color: white;
-      margin-left: 140px;
       width: 1300px;
     }
 
     .about-desc::before {
+      display: flex;
       content: "";
-      width: 250px;
+      width: 30px;
       height: 30px;
       background-color: #2f81f7;
       z-index: 10;
-      right: 50px;
+      right: 140px;
       top: -50px;
       position: relative;
       border-radius: 50px;
     }
 
     .about-desc::after {
+      display: flex;
       content: "";
-      width: 400px;
+      width: 50px;
       height: 49px;
       background-color: #ffffff00;
       z-index: 9;
-      right: 1011px;
-      top: -59px;
+      right: 149px;
+      top: -503px;
       position: relative;
       border-radius: 50px;
       box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px;
     }
 
     .fun-fact-desc::before {
+      display: flex;
       content: "";
-      width: 600px;
+      width: 200px;
       height: 1040px;
       z-index: 5;
-      right: 7px;
-      bottom: 762px;
-      position: relative;
+      right: 730px;
+      top: 2710px;
+      position: absolute;
       background-color: black;
       animation: animate1 8s ease-in infinite;
       transform-origin: top;
     }
 
     .fun-fact-desc::after {
+      display: flex;
       content: "";
-      width: 45px;
+      width: 15px;
       height: 980px;
       background-color: white;
       z-index: 4;
-      right: 1008px;
-      bottom: 722px;
-      position: relative;
+      right: 816px;
+      top: 2728px;
+      position: absolute;
       transform-origin: top;
       animation: animate 8s ease-out infinite;
       box-shadow: 0 20px 50px 9px #2f81f7;
@@ -305,8 +307,8 @@ header h3 {
         content: "";
         width: 3px;
         height: 980px;
-        right: 814px;
-        top: 2766px;
+        right: 822px;
+        top: 2729px;
         position: absolute;
         background-color: white;
         z-index: 6;
@@ -330,6 +332,11 @@ header h3 {
 
 /*** Skills section ***/
 
+
+.skills .content-wrapper {
+  padding-top: 0px;
+  height: 700px;
+}
 
 .skill-list h3 {
   color: white;
@@ -370,7 +377,7 @@ header h3 {
   padding: 4px 4px 4px 4px;
   width: 250px;
   height: 190px;
-  box-shadow: 0 0 50px -3px #2f81f7;
+  box-shadow: 0 0 55px 0px #2f81f7;
 }
 
 
@@ -378,6 +385,138 @@ header h3 {
 .skill-list img {
   width: 90px;
 }
+
+/*** Projects ***/
+
+#projects .content-wrapper {
+  padding-top: 400px;
+}
+
+.project-h2 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 120px;
+    color: white;
+    width: 1300px;
+    margin: 0 0 3em 0;
+}
+
+.project-h2 h2::after {
+  content: "";
+  width: 450px;
+  height: 50px;
+  background-color: #2f81f7;
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  left: 500px;
+  top: 5085px;
+}
+
+
+.unplugged img {
+  height: 390px;
+  width: 700px;
+}
+
+.img-background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1a4685;
+  position: relative;
+  height: 600px;
+  width: 850px;
+  z-index: -2;
+}
+
+.unplugged-text {
+  position: absolute;
+  top: 5492px;
+  left: 600px;
+  width: 600px;
+  height: 585px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 40%);
+  padding: 20px 0 0 40px;
+}
+
+.unplugged-text h3 {
+  color: white;
+  font-size: 60px;
+  margin: 0 0 30px 0;
+}
+
+.unplugged-text h4 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.unplugged-text a {
+  font-family: "montserrat", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  cursor: pointer;
+  transition: all 0s;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.unplugged-text a::after {
+  content: "";
+  background-color: #2362bb;
+  position: absolute;
+  height: 10px;
+  z-index: 2;
+}
+
+/*.project-link1 a:hover::after {
+  transform: scaleY(7.2);
+  z-index: -1;
+}
+
+.project-link2 a:hover::after {
+  transform: scaleY(7.1);
+  z-index: -1;
+}
+
+.unplugged-text a:hover {
+  color: rgba(0, 0, 0, 0.70);
+}*/
+
+.project-link1 a::after {
+  top: 475px;
+  left: 40px;
+  width: 320px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+.project-link2 a::after {
+  top: 560px;
+  left: 40px;
+  width: 430px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+.unplugged-text .project-link2 {
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 
