@@ -67,7 +67,7 @@ header h3 {
   margin-left: 390px;
   animation-name: moveInBottom;
   animation-duration: 0.7s;
-  animation-delay: 1.8s;
+  animation-delay: 2.5s;
   animation-fill-mode: backwards;
   cursor: pointer;
 }
