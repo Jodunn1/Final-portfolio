@@ -8,11 +8,11 @@ body {
   font-style: normal;
   background-color: #000000;
   margin: 0;
-  width: 1300px;
+  width: 1350px;
 }
 
 .content-wrapper {
-    width: 1300px;
+    width: 1350px;
     margin: 0 auto;
     overflow: auto;
 }
@@ -21,6 +21,8 @@ body {
 /*** Header Styles ***/
 .homepage-hero .content-wrapper {
     height: 2100px;
+    width: 1300px;
+    margin: 0;
 }
 
 
@@ -32,7 +34,7 @@ header h2 {
     clear: both;
     font-size: 120px;
     margin: 0;
-    padding: 900px 0px 0px 50px;
+    padding: 900px 0px 0px 70px;
     color: white;
 }
 
@@ -52,9 +54,9 @@ header h3 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 45px;
-    margin-top: 40px;
+    margin: 40px 0 0 60px;
     color: white;
-    width: 1280px;
+    width: 1220px;
     text-align: center;
 }
 
@@ -64,7 +66,7 @@ header h3 {
   display: flex;
   justify-content: center;
   width: 500px;
-  margin-left: 390px;
+  margin: 40px 0 0 410px;
   animation-name: moveInBottom;
   animation-duration: 0.7s;
   animation-delay: 2.5s;
@@ -106,8 +108,8 @@ header h3 {
     position: fixed;
     padding: 30px 0;
     z-index: 20;
-    left: 10px;
-    margin: 20px 0 0 15px;
+    left: 45px;
+    margin: 20px 0 0 0;
   }
 
   
@@ -122,7 +124,7 @@ header h3 {
     cursor: pointer;
     border-radius: 5px;
     transition: .5s;
-    margin: 0px 30px;
+    margin: 0px 40px;
   }
   
   .value:not(:active):hover,
@@ -150,7 +152,8 @@ header h3 {
 
   
   .value:focus::before,
-  .value:active::before {
+  .value:active::before,
+  .value:hover::before {
     opacity: 1;
   }
   
@@ -171,7 +174,7 @@ header h3 {
   #particles-js {
     position: absolute;
     width: 1300px;
-    height: 9000px;
+    height: 12000px;
     background-color: #00000000;
     background-image: url("");
     background-repeat: no-repeat;
@@ -191,9 +194,14 @@ header h3 {
     }
 
     .about .content-wrapper {
+      width: 1300px;
       height: 1500px;
       padding-top: 300px;
       overflow: hidden;
+    }
+
+    #about {
+      width: 1300px;
     }
 
 
@@ -224,7 +232,7 @@ header h3 {
       height: 500px;
       font-size: 40px;
       color: white;
-      font-weight: 400;
+      font-weight: 500;
       margin: 0 0 0 180px;
     }
 
@@ -361,6 +369,7 @@ header h3 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-left: 90px;
 }
 
 .skill-list {
@@ -399,7 +408,7 @@ header h3 {
     font-size: 120px;
     color: white;
     width: 1300px;
-    margin: 0 0 3em 0;
+    margin: 0 0 2em 0;
 }
 
 .project-h2 h2::after {
@@ -414,32 +423,43 @@ header h3 {
   top: 5085px;
 }
 
+/* Unplugged */
 
-.unplugged img {
-  height: 390px;
+.unplugged, 
+.recipe-app,
+.sticky-note,
+.rogue-pickings,
+.guess-the-word {
+  margin-bottom: 100px;
+  height: 800px;
+}
+
+
+.projects-lists img {
+  height: 370px;
   width: 700px;
 }
 
-.img-background {
+.projects-lists .img-background {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: #1a4685;
   position: relative;
-  height: 600px;
+  height: 650px;
   width: 850px;
   z-index: -2;
 }
 
 .unplugged-text {
   position: absolute;
-  top: 5492px;
+  top: 5375px;
   left: 600px;
-  width: 600px;
-  height: 585px;
+  width: 670px;
+  height: 635px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 40%);
-  padding: 20px 0 0 40px;
+  background-color: #181818a6;
+  padding: 20px 40px 0 40px;
 }
 
 .unplugged-text h3 {
@@ -450,7 +470,7 @@ header h3 {
 
 .unplugged-text h4 {
   color: white;
-  font-size: 35px;
+  font-size: 38px;
   font-weight: 500;
 }
 
@@ -466,7 +486,7 @@ header h3 {
   text-decoration: none;
 }
 
-.unplugged-text a::after {
+.projects-lists a::after {
   content: "";
   background-color: #2362bb;
   position: absolute;
@@ -474,22 +494,18 @@ header h3 {
   z-index: 2;
 }
 
-/*.project-link1 a:hover::after {
-  transform: scaleY(7.2);
+.project-link1 a:hover::after {
+  transform: scaleY(7.5);
   z-index: -1;
 }
 
 .project-link2 a:hover::after {
-  transform: scaleY(7.1);
+  transform: scaleY(7.5);
   z-index: -1;
 }
 
-.unplugged-text a:hover {
-  color: rgba(0, 0, 0, 0.70);
-}*/
-
-.project-link1 a::after {
-  top: 475px;
+.unplugged .project-link1 a::after {
+  top: 505px;
   left: 40px;
   width: 320px;
   transition: all 0.25s;
@@ -497,8 +513,8 @@ header h3 {
   display: block;
 }
 
-.project-link2 a::after {
-  top: 560px;
+.unplugged .project-link2 a::after {
+  top: 590px;
   left: 40px;
   width: 430px;
   transition: all 0.25s;
@@ -506,9 +522,313 @@ header h3 {
   display: block;
 }
 
-.unplugged-text .project-link2 {
+.project-link2 {
   margin-top: 40px;
 }
+
+.projects-lists {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Recipe app */
+
+.recipe-app {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.recipe-app .img-background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1a4685;
+  position: relative;
+  height: 650px;
+  width: 850px;
+  z-index: -2;
+}
+
+.recipe-app-text {
+  position: absolute;
+  top: 6275px;
+  left: 0px;
+  width: 670px;
+  height: 635px;
+  z-index: 1;
+  background-color: #181818a6;
+  padding: 20px 40px 0 40px;
+}
+
+.recipe-app-text h3 {
+  color: white;
+  font-size: 60px;
+  margin: 0 0 30px 0;
+}
+
+.recipe-app-text h4 {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.recipe-app-text a {
+  font-family: "montserrat", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  cursor: pointer;
+  transition: all 0s;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.recipe-app .project-link1 a::after {
+  top: 505px;
+  left: 40px;
+  width: 320px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+.recipe-app .project-link2 a::after {
+  top: 590px;
+  left: 40px;
+  width: 430px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+/* Sticky notes */
+
+
+.img-background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1a4685;
+  position: relative;
+  height: 650px;
+  width: 850px;
+  z-index: -2;
+}
+
+.sticky-note-text {
+  position: absolute;
+  top: 7178px;
+  left: 600px;
+  width: 670px;
+  height: 635px;
+  z-index: 1;
+  background-color: #181818a6;
+  padding: 20px 40px 0 40px;
+}
+
+.sticky-note-text h3 {
+  color: white;
+  font-size: 60px;
+  margin: 0 0 30px 0;
+}
+
+.sticky-note-text h4 {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+  padding-right: 40px;
+}
+
+.sticky-note-text a {
+  font-family: "montserrat", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  cursor: pointer;
+  transition: all 0s;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.projects-lists a::after {
+  content: "";
+  background-color: #2362bb;
+  position: absolute;
+  height: 10px;
+  z-index: 2;
+}
+
+.sticky-note .project-link1 a::after {
+  top: 505px;
+  left: 40px;
+  width: 320px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+.sticky-note .project-link2 a::after {
+  top: 590px;
+  left: 40px;
+  width: 430px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+/* Rogue pickings */
+
+.rogue-pickings {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.rogue-pickings .img-background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1a4685;
+  position: relative;
+  height: 650px;
+  width: 850px;
+  z-index: -2;
+}
+
+.rogue-pickings-text {
+  position: absolute;
+  top: 8075px;
+  left: 0px;
+  width: 670px;
+  height: 635px;
+  z-index: 1;
+  background-color: #181818a6;
+  padding: 20px 40px 0 40px;
+}
+
+.rogue-pickings-text h3 {
+  color: white;
+  font-size: 60px;
+  margin: 0 0 30px 0;
+}
+
+.rogue-pickings-text h4 {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.rogue-pickings-text a {
+  font-family: "montserrat", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  cursor: pointer;
+  transition: all 0s;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.rogue-pickings .project-link1 a::after {
+  top: 505px;
+  left: 40px;
+  width: 320px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+.rogue-pickings .project-link2 a::after {
+  top: 590px;
+  left: 40px;
+  width: 430px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+/* Guess the word */
+
+.img-background {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1a4685;
+  position: relative;
+  height: 650px;
+  width: 850px;
+  z-index: -2;
+}
+
+.guess-the-word-text {
+  position: absolute;
+  top: 8978px;
+  left: 600px;
+  width: 670px;
+  height: 635px;
+  z-index: 1;
+  background-color: #181818a6;
+  padding: 20px 40px 0 40px;
+}
+
+.guess-the-word-text h3 {
+  color: white;
+  font-size: 55px;
+  margin: 0 0 30px 0;
+}
+
+.guess-the-word-text h4 {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+  padding-right: 40px;
+}
+
+.guess-the-word-text a {
+  font-family: "montserrat", sans-serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  cursor: pointer;
+  transition: all 0s;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.projects-lists a::after {
+  content: "";
+  background-color: #2362bb;
+  position: absolute;
+  height: 10px;
+  z-index: 2;
+}
+
+.guess-the-word .project-link1 a::after {
+  top: 500px;
+  left: 40px;
+  width: 320px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+.guess-the-word .project-link2 a::after {
+  top: 585px;
+  left: 40px;
+  width: 430px;
+  transition: all 0.25s;
+  transform-origin: bottom;
+  display: block;
+}
+
+
+
 
 
 

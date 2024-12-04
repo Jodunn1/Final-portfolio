@@ -72,4 +72,79 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }); 
 
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
+        const aboutblue = document.querySelector('.about-blue');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          aboutblue.classList.add('blue');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        aboutblue.classList.remove('blue');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.aboutme3');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
+        const projectblue = document.querySelector('.projects-blue');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          projectblue.classList.add('blue');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        projectblue.classList.remove('blue');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.projects2');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
+        const projectblue = document.querySelector('.projects-blue2');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          projectblue.classList.add('blue');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        projectblue.classList.remove('blue');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.projects3');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
 

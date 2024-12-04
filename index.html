@@ -16,7 +16,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="js/app.js"></script>
-  <script src="particles.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 
@@ -36,14 +35,14 @@
         </button>
         <button class="value">
           <svg id="Line" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"></svg>
-          <a href="#about"><span class="about-blue">About Me</span></a>
+          <a href="#about"><span class="about-blue"><span class="about-blue2">About Me</span></span></a>
           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2"></svg>
         </button>
         <button class="value">
           <svg id="svg8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
             <g id="layer1" transform="translate(-33.022 -30.617)"></g>
           </svg>
-          <a href="#projects">Projects</a>
+          <a href="#projects"><span class="projects-blue"><span class="projects-blue2">Projects</span></span></a>
           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2"></svg>
         </button>
         <button class="value">
@@ -62,7 +61,7 @@
         <script>
           var typed = new Typed(".typed-fade-out", {
             strings: ["Full Stack <span>Developer</span>"],
-            typeSpeed: 80,
+            typeSpeed: 50,
             loop: true,
             showCursor: true,
             cursorChar: "|",
@@ -94,24 +93,24 @@
         <h2 class="about-me">About me</h2>
         <div class="desc-container">
           <div class="about-desc-container">
-            <p class="about-desc">
+            <h4 class="about-desc">
             Hello there! My name is Jordan Dunn. My professional goal is
             becoming a full stack developer. As a kid I have always been
             intrigued with computers and learning how they work. Through
             researching different career paths in computer science, my eyes
             were opened to the world of web development. I enjoy web
             development because it is challenging while also allowing me to
-            top into my creative side.
-          </p>
+            tap into my creative side.
+            </h4>
           </div>
           
           <h2 class="fun-fact">Fun Fact</h2>
           <div class="fun-fact-desc-container">
-            <p id="skills" class="fun-fact-desc aboutme2">
+            <h4 class="fun-fact-desc aboutme2">
             While in middle school, I learned aspects of graphic design.
             Through that I was able to design social media banners for
             clients. These skills also helped me with designing this website.
-          </p>
+            </h4>
           </div>  
         </div>
       </div>
@@ -149,7 +148,7 @@
               </div>
 
               <div class="skill-list six">
-                <img src="./img/icons8-python-153.png">
+                <img class="aboutme3" src="./img/icons8-python-153.png">
                 <h3>Python</h3>
               </div>
             </div>
@@ -180,6 +179,87 @@
               </div>
               <div class="project-link2">
                 <a href="https://github.com/Jodunn1/html5-boilerplate/tree/main" target="_blank"> LEARN MORE </a>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-app">
+            <div class="img-background">
+              <div class="recipe-app-img-container">
+                <img src="/img/recipe-app.PNG">
+              </div>
+            </div>
+            <div class="recipe-app-text">
+              <h3> Recipe App </h3>
+              <h4> An application coded through react and python in which the user is able to add their own recipes, view their added recipes, delete recipes, and save multiple recipes to a database. 
+              <br/>
+              <br/>
+              </h4>
+              <div class="project-link1">
+                <a href="https://recipe-card-app.netlify.app/" target="_blank"> LIVE APP </a>
+              </div>
+              <div class="project-link2">
+                <a class="projects2" href="https://github.com/Jodunn1/Recipe-app" target="_blank"> LEARN MORE </a>
+              </div>
+            </div>
+          </div>
+          <div class="sticky-note">
+            <div class="img-background">
+              <div class="sticky-note-img-container">
+                <img src="/img/sticky-note.PNG">
+              </div>
+            </div>
+            <div class="sticky-note-text">
+              <h3 > Sticky Notes UI </h3>
+              <h4> An interactive React app that lets users create “sticky notes” plus edit, delete, and search their to-do list items.
+                <br/>
+                <br/>
+                <br/>
+              </h4>
+              <div class="project-link1">
+                <a href="https://jv6drh.csb.app/" target="_blank"> LIVE APP </a>
+              </div>
+              <div class="project-link2">
+                <a href="https://codesandbox.io/p/sandbox/sticky-note-app-jv6drh" target="_blank"> LEARN MORE </a>
+              </div>
+            </div>
+          </div>
+          <div class="rogue-pickings">
+            <div class="img-background">
+              <div class="rogue-pickings-img-container">
+                <img src="/img/rogue-pickings.PNG">
+              </div>
+            </div>
+            <div class="rogue-pickings-text">
+              <h3 class="projects3"> Rogue Pickings </h3>
+              <h4> A simple home page perfect for a pop-up restaurant or food truck. Originally a static website, I converted it into a responsive design using Flexbox.
+                <br/>
+                <br/>
+              </h4>
+              <div class="project-link1">
+                <a href="https://jodunn1.github.io/Rogue-pickings-responsive/" target="_blank"> LIVE APP </a>
+              </div>
+              <div class="project-link2">
+                <a href="https://github.com/Jodunn1/Rogue-pickings-responsive" target="_blank"> LEARN MORE </a>
+              </div>
+            </div>
+          </div>
+          <div class="guess-the-word">
+            <div class="img-background">
+              <div class="guess-the-word-img-container">
+                <img src="/img/guess-the-word.PNG">
+              </div>
+            </div>
+            <div class="guess-the-word-text">
+              <h3> Guess The Word Game </h3>
+              <h4> An interactive JavaScript game where players guess one letter at a time. Guess all the letters correctly in eight attempts, you win!
+              <br/>
+              <br/>
+              </h4>
+              <div class="project-link1">
+                <a href="https://jodunn1.github.io/guesstheword/" target="_blank"> LIVE APP </a>
+              </div>
+              <div class="project-link2">
+                <a href="https://github.com/Jodunn1/guesstheword" target="_blank"> LEARN MORE </a>
               </div>
             </div>
           </div>

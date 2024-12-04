@@ -1,6 +1,6 @@
 particlesJS("particles-js", {
   particles: {
-    number: { value: 10, density: { enable: true, value_area: 1000 } },
+    number: { value: 15, density: { enable: true, value_area: 1000 } },
     color: { value: "#ffffff" },
     shape: {
       type: "circle",
@@ -11,10 +11,10 @@ particlesJS("particles-js", {
     opacity: {
       value: 1,
       random: true,
-      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+      anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
     },
     size: {
-      value: 3,
+      value: 4,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
     },
@@ -27,9 +27,9 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 1,
+      speed: 5,
       direction: "none",
-      random: false,
+      random: true,
       straight: false,
       out_mode: "out",
       bounce: false,
@@ -51,7 +51,7 @@ particlesJS("particles-js", {
       remove: { particles_nb: 2 }
     }
   },
-  retina_detect: true
+  retina_detect: false
 });
 var count_particles, stats, update;
 stats = new Stats();
