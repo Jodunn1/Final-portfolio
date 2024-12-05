@@ -47,7 +47,7 @@
         </button>
         <button class="value">
           <svg fill="none" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg"></svg>
-          <a href="#contact">Contact</a>
+          <a href="#contact"><span class="contact-blue">Contact</span></a>
           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2"></svg>
         </button>
       </div>
@@ -172,7 +172,7 @@
             </div>
             <div class="unplugged-text">
               <h3> Unplugged </h3>
-              <h4> A multi-page responsive website that adapts to mobile, tablet, and desktop screens. This site allows companies to schedule a retreat away from the workplace for their employies.
+              <h4> A multi-page responsive website that adapts to mobile, tablet, and desktop screens. This site allows companies to schedule a retreat away from the workplace for their employees.
               </h4>
               <div class="project-link1">
                 <a href="https://jodunn1.github.io/html5-boilerplate/" target="_blank"> LIVE APP </a>
@@ -270,37 +270,26 @@
 
   <footer id="contact" class="animate">
     <div class="content-wrapper">
-      <div class="contact-image">
-        <img src="img/jess-bailey-q10VITrVYUM-unsplash.png" alt="Desk with glasses, keyboard, pens and notepad" />
+      <div class="contact-header">
+        <h2> Contact Me</h2>
       </div>
-
-      <div class="contact-info">
-        <h2>Contact Me</h2>
-
-        <h3 id="email-header">Let's meet for a cup of coffee.</h3>
-
-        <a href="mailto:JordanDunnDeveloping@gmail.com">
-          <img id="envelope-icon" src="img/envelope.png" alt="Envelope icon" />
-          JordanDunnDeveloping@gmail.com
-        </a>
-
-        <h3 id="email-bottom">Or, follow me on social media:</h3>
-
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/feed/" target="_blank">
-              <img src="img/linkedin.png" alt="LinkedIns logo" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/" target="_blank">
-              <img src="img/github.png" alt="GitHubs logo" />
-            </a>
-          </li>
-        </ul>
+      <form
+      action="https://formspree.io/f/xdkojnok"
+      method="POST">
+        <div class="contact-form">
+          <div class="input-field">
+            <input class="contact-name" type="text" placeholder="Name" name="name" required>
+          </div>
+          <div class="input-field">
+            <input class="contact" type="email" placeholder="Email" name="email" required>
+          </div>
+          <div class="input-field">
+            <textarea type="text" placeholder="Message" name="message" required></textarea>
+          </div>
+          <button><span>Submit</span></button>
       </div>
+      </form>
     </div>
   </footer>
 </body>
-
 </html>

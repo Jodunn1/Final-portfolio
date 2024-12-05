@@ -174,7 +174,7 @@ header h3 {
   #particles-js {
     position: absolute;
     width: 1300px;
-    height: 12000px;
+    height: 11500px;
     background-color: #00000000;
     background-image: url("");
     background-repeat: no-repeat;
@@ -826,6 +826,116 @@ header h3 {
   transform-origin: bottom;
   display: block;
 }
+
+/** Contact section **/
+
+.contact-header h2 {
+  color: white;
+  font-size: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-header h2:after {
+  width: 650px;
+  content: "";
+  background-color: #2f81f7;
+  height: 70px;
+  position: relative;
+  z-index: -1;
+  bottom: 60px;
+  left: 80px;
+}
+
+.contact-form {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a1f248f;
+  border: 7px solid #a7a7a730;
+  border-radius: 20px;
+  width: 1000px;
+  height: 800px;  
+}
+
+form {
+  position: relative;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-field input {
+  width: 850px;
+  height: 80px;
+  margin: 50px 0 0px 0;
+  font-size: 40px;
+  font-weight: 900;
+  border: 0;
+  color: white;
+  background-color: #2b323a;
+  outline: none;
+}
+
+.input-field .contact-name {
+  margin-top: 80px;
+}
+
+
+.input-field textarea {
+  color: white;
+  width: 850px;
+  height: 250px;
+  margin: 50px 0 0px 0;
+  font-size: 40px;
+  border: 0;
+  font-weight: 900;
+  background-color: #2b323a;
+  resize: none;
+  outline: 0;
+}
+
+.contact-form button {
+  border: 0;
+  font-size: 60px;
+  color: white;
+  background: none;
+  background-color: none;
+  margin: 50px 0 0 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.contact-form button:after {
+  content: "";
+  background-color: #2362bb;
+  height: 10px;
+  position: relative;
+  width: 300px;
+  display: block;
+  cursor: pointer;
+  transform-origin: bottom;
+  transition: all 0.25s;
+  display: block;
+  z-index: 1;
+}
+
+.contact-form button:hover:after {
+  transform: scaleY(9);
+  z-index: 1;
+}
+
+.contact-form button span {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
