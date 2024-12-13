@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Dunn | Portfolio</title>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/normalize.css" />
@@ -18,8 +18,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="js/app.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="js/lib/gradients.js"></script>
-
 </head>
 
 <body>
@@ -64,7 +62,7 @@
         <script>
           var typed = new Typed(".typed-fade-out", {
             strings: ["Full Stack <span>Developer</span>"],
-            typeSpeed: 0,
+            typeSpeed: 30,
             loop: true,
             showCursor: true,
             cursorChar: "|",
@@ -72,21 +70,27 @@
         </script>
       </div>
 
-      <h3>
+      <div class="h3-container">
+        <h3>
         Hi I'm Jordan, a full stack developer based out of Santa Clarita,
         California.
       </h3>
+      </div>
+      
 
-      <div class="button-wrapper">
+      <div class="button-container">
+        <div class="button-wrapper">
         <a href="#projects">
           View my work
-          <svg width="100px" height="100px" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="7vw" height="30vw" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M11.0001 3.67157L13.0001 3.67157L13.0001 16.4999L16.2426 13.2574L17.6568 14.6716L12 20.3284L6.34314 14.6716L7.75735 13.2574L11.0001 16.5001L11.0001 3.67157Z"
               fill="currentColor" />
           </svg>
         </a>
       </div>
+      </div>
+      
       <div class="social-icons">
         <a target="_blank" href="https://github.com/Jodunn1">
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16"><path fill="#fff" d="M8 0c4.42 0 8 3.58 8 8a8.01 8.01 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27s-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8"/></svg>
@@ -184,25 +188,28 @@
               </div>
             </div>
             <div class="unplugged-text blurred2">
-              <h3> Unplugged </h3>
-              <h4> A multi-page responsive website that adapts to mobile, tablet, and desktop screens. This site allows companies to schedule a retreat away from the workplace for their employees.
-              </h4>
-              <div class="project-link1">
+              <div class="text-container">
+                <h3> Unplugged </h3>
+                <h4> A multi-page responsive website that adapts to mobile, tablet, and desktop screens. This site allows companies to schedule a retreat away from the workplace for their employees.
+                </h4>
+                <div class="project-link1">
                 <a href="https://jodunn1.github.io/html5-boilerplate/" target="_blank"> LIVE APP </a>
               </div>
               <div class="project-link2">
                 <a href="https://github.com/Jodunn1/html5-boilerplate/tree/main" target="_blank"> LEARN MORE </a>
               </div>
+              </div>
             </div>
           </div>
+          <svg class="blurredanimate2"></svg>
           <div class="recipe-app">
-            <svg class="blurredanimate2"></svg>
             <div class="img-background blurred3">
               <div class="recipe-app-img-container">
                 <img src="/img/recipe-app.PNG">
               </div>
             </div>
             <div class="recipe-app-text blurred4">
+              <div class="text-container">
               <h3> Recipe App </h3>
               <h4> An application coded through react and python in which the user is able to add their own recipes, view their added recipes, delete recipes, and save multiple recipes to a database. 
               <br/>
@@ -215,15 +222,17 @@
                 <a class="projects2" href="https://github.com/Jodunn1/Recipe-app" target="_blank"> LEARN MORE </a>
               </div>
             </div>
+            </div>
           </div>
+                      <svg class="blurredanimate3"></svg>
           <div class="sticky-note">
-            <svg class="blurredanimate3"></svg>
             <div class="img-background blurred5">
               <div class="sticky-note-img-container">
                 <img src="/img/sticky-note.PNG">
               </div>
             </div>
             <div class="sticky-note-text blurred6">
+              <div class="text-container">
               <h3> Sticky Notes UI </h3>
               <h4> An interactive React app that lets users create “sticky notes” plus edit, delete, and search their to-do list items.
                 <br/>
@@ -236,6 +245,7 @@
               <div class="project-link2">
                 <a href="https://codesandbox.io/p/sandbox/sticky-note-app-jv6drh" target="_blank"> LEARN MORE </a>
               </div>
+              </div>
             </div>
           </div>
           <div class="rogue-pickings">
@@ -246,6 +256,7 @@
               </div>
             </div>
             <div class="rogue-pickings-text blurred8">
+              <div class="text-container">
               <h3 class="projects3"> Rogue Pickings </h3>
               <h4> A simple home page perfect for a pop-up restaurant or food truck. Originally a static website, I converted it into a responsive design using Flexbox.
                 <br/>
@@ -258,6 +269,7 @@
                 <a href="https://github.com/Jodunn1/Rogue-pickings-responsive" target="_blank"> LEARN MORE </a>
               </div>
             </div>
+            </div>
           </div>
           <div class="guess-the-word">
             <svg class="blurredanimate5"></svg>
@@ -267,6 +279,7 @@
               </div>
             </div>
             <div class="guess-the-word-text blurred10">
+              <div class="text-container">
               <h3> Guess The Word Game </h3>
               <h4> An interactive JavaScript game where players guess one letter at a time. Guess all the letters correctly in eight attempts, you win!
               <br/>
@@ -278,6 +291,7 @@
               <div class="project-link2">
                 <a href="https://github.com/Jodunn1/guesstheword" target="_blank"> LEARN MORE </a>
               </div>
+            </div>
             </div>
           </div>
         </div>
