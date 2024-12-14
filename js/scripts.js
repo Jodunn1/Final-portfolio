@@ -572,5 +572,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 }); 
 
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
+        const blurredright = document.querySelector('.blurred10');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          blurredright.classList.add('hover');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        blurredright.classList.remove('hover');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.blurredanimate5');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
 
 
