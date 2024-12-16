@@ -231,10 +231,10 @@ html, body {
       background-color: #1a1f24;
       width: 100%;
       position: sticky;
-      padding: 2vw 0;
+      padding: 0.9rem 0;
       z-index: 99;
       top: 0;
-      bottom: -6vw;
+      bottom: -5vh;
       left: 0;
     }
 
@@ -287,7 +287,7 @@ html, body {
     }
   
     .input .value a {
-      font-size: 3vw;
+      font-size: 0.8rem;
       font-family: "Space Grotesk", sans-serif;
       margin: 0px;
       text-decoration: none;
@@ -355,7 +355,7 @@ html, body {
   
       .about-desc {
         height: 90px;
-        font-size: 2.7vw;
+        font-size: 2.9vw;
         color: white;
         font-weight: 500;
         width: 70vw;
@@ -574,7 +574,7 @@ html, body {
     width: 60%;
     z-index: -2;
     opacity: 0;
-    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
     }
 
   .unplugged .text-container {
@@ -678,7 +678,7 @@ html, body {
   
   
   .recipe-app .img-background {
-    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -750,7 +750,7 @@ html, body {
   
   
   .sticky-note .img-background {
-    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );    
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );   
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -829,7 +829,7 @@ html, body {
   /* Rogue pickings */
 
   .rogue-pickings .img-background {
-    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );    
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );    
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -891,7 +891,7 @@ html, body {
   /* Guess the word */
   
   .img-background {
-    background-image: linear-gradient( 288deg,  rgba(0,85,255,1) 1.5%, rgba(4,56,115,1) 91.6% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1182,7 +1182,7 @@ html, body {
       }
 
       .input .value a {
-          font-size: 2.5vw;
+          font-size: 0.9rem;
       }
 
       /* Headers */
@@ -1234,23 +1234,23 @@ html, body {
 
       /* About me */
       .about .content-wrapper {
-          height: 75vw;
+          height: 30rem;
       }
 
       .about-me {
-        font-size: 6vw;
+        font-size: 2.7rem;
       }
 
       .about-me::after {
-        width: 27vw;
-        bottom: 3vw;
-        left: 4vw;
-        height: 3vw;
+        width: 11.5rem;
+        bottom: 1.3rem;
+        left: 1.4rem;
+        height: 1.3rem;
     }
 
       .about-desc {
         position: relative;
-        font-size: 2.5vw;
+        font-size: 0.9rem;
         bottom: 3vw;
       }
 
@@ -1261,19 +1261,20 @@ html, body {
       .fun-fact {
         position: relative;
         bottom: 5vw;
-        font-size: 5vw;
+        font-size: 2rem;
       }
 
       .fun-fact::after {
-        left: 3vw;
-        width: 21%;
-        height: 2.8vw;
-        top: -2.8vw;      }
+        left: 1.1rem;
+        width: 8rem;
+        height: 1rem;
+        top: -1rem;  
+      }
 
       .fun-fact-desc {
         position: relative;
         bottom: 17vw;
-        font-size: 2.5vw;
+        font-size: 0.9rem;
       }
 
       /* Skills */
@@ -1282,17 +1283,24 @@ html, body {
       }
 
       .skill-list {
-        width: 19vw;
-        height: 13vw;
+        width: 7rem;
+        height: 5rem;
       }
 
 
       .skill-list img {
-        width: 6vw;
+        width: 2.2rem;
       }
 
       .skill-list h3 {
-        font-size: 2.7vw;
+        font-size: 0.9rem;
+      }
+
+      .skill-row1,
+      .skill-row2,
+      .skill-row3 {
+        width: 10rem;
+        height: 20rem;
       }
 
       .skills svg {
@@ -1302,16 +1310,16 @@ html, body {
       /* Projects */
 
       .project-h2 h2 {
-        font-size: 6vw;
+        font-size: 2.7rem;
         padding-top: 28vw;
       }
 
       .project-h2 h2::after {
         position: relative;
-        width: 24vw;
-        height: 3vw;
-        bottom: 3vw;
-        left: 4vw;
+        width: 10rem;
+        bottom: 1.3rem;
+        left: 1.5rem;
+        height: 1.3rem;
       }
 
       .projects-lists img {
@@ -1429,9 +1437,7 @@ html, body {
     height: 550vmax;
   }
 
-  .input .value a {
-    font-size: 2vw;
-  }
+
 
   .contact-form button:hover:after {
     transform: scaleY(17);
@@ -1478,8 +1484,8 @@ html, body {
   .sticky-note-text h4,
   .rogue-pickings-text h4,
   .guess-the-word-text h4 {
-    font-size: 1.9vw;
-    margin: 3vw 0;
+    font-size: 2vw;
+    margin: 2vw 0 4vw 0;
     height: 10vw;
     line-height: 2.5vw;
   }
@@ -1507,6 +1513,7 @@ html, body {
     bottom: 1vw;
     right: -25vw;
     height: 30vw;
+    width: 48.5%;
     }
   
 
@@ -1525,25 +1532,46 @@ html, body {
   .value {
     padding: 6px 2px;
   }
-  .skill-list {
-    width: 18vw;
-    height: 12vw;
+
+  .fun-fact {
+    height: 100px;
+    bottom: 30px;
   }
 
-
-  .skill-list img {
-    width: 5vw;
+  .fun-fact-desc {
+    height: 455px;
+    bottom: 75px;
   }
 
-  .skill-list h3 {
-    font-size: 2.3vw;
+  .about-desc {
+    bottom: 20px;
   }
 
-  .skill-row1,
-  .skill-row2,
-  .skill-row3 {
-    width: 27vw;
+  .contact-header h2 {
+    font-size: 2.5rem;
   }
+
+  .contact-header h2::after {
+    width: 220px;
+    height: 22.5px;
+    bottom: 1.2rem;
+    left: 1.6rem;
+  }
+
+  .input-field input,
+  .input-field textarea {
+    width: 25rem;
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    font-size: 1.6rem;
+  }
+
+  .contact-form button::after {
+    width: 108px;
+  }
+
 }
 
 @media screen and (min-width: 700px) {
@@ -1560,7 +1588,7 @@ html, body {
     }
 
   header h3 {
-      width: 51%;
+      width: 60%;
       font-size: 2.1vw;
       text-align: start;
     }
@@ -1610,8 +1638,49 @@ html, body {
     height:650vmax;
   }
 
+  .about-desc,
+  .fun-fact-desc {
+    width: 486px;
+  }
+
   .skills svg {
     bottom: 400px;
+  }
+
+  .unplugged .text-container,
+  .sticky-note-text .text-container,
+  .guess-the-word-text .text-container {
+    height: 25vw;
+    width: 44%;
+    bottom: -2vw;
+  }
+
+  .recipe-app-text .text-container,
+  .rogue-pickings-text .text-container {
+    height: 25vw;
+    width: 49%;
+    bottom: -2vw;
+  }
+
+  .unplugged-text h3,
+  .recipe-app-text h3,
+  .sticky-note-text h3,
+  .rogue-pickings-text h3,
+  .guess-the-word-text h3 {
+    font-size: 3.1vw;
+  }
+
+  .unplugged-text h4,
+  .recipe-app-text h4,
+  .sticky-note-text h4,
+  .rogue-pickings-text h4,
+  .guess-the-word-text h4 {
+    font-size: 1.8vw;
+  }
+
+  .project-link1 a,
+  .project-link2 a {
+    font-size: 1.8vw;
   }
 }
   
