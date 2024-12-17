@@ -607,7 +607,7 @@ html, body {
     width: 60%;
     z-index: -2;
     opacity: 0;
-    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  #2f81f7 0.1%, rgb(1, 4, 50) 100.2% );
     }
 
   .unplugged .text-container {
@@ -711,7 +711,7 @@ html, body {
   
   
   .recipe-app .img-background {
-    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  #2f81f7 0.1%, rgb(1, 4, 50) 100.2% );
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -783,7 +783,7 @@ html, body {
   
   
   .sticky-note .img-background {
-    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );   
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  #2f81f7 0.1%, rgb(1, 4, 50) 100.2% );   
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -862,7 +862,7 @@ html, body {
   /* Rogue pickings */
 
   .rogue-pickings .img-background {
-    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );    
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  #2f81f7 0.1%, rgb(1, 4, 50) 100.2% );   
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -924,7 +924,7 @@ html, body {
   /* Guess the word */
   
   .img-background {
-    background-image: radial-gradient( circle 382px at 50% 50.2%,  rgba(73,76,212,1) 0.1%, rgba(3,1,50,1) 100.2% );
+    background-image: radial-gradient( circle 382px at 50% 50.2%,  #2f81f7 0.1%, rgb(1, 4, 50) 100.2% );
     display: flex;
     align-items: center;
     justify-content: flex-start;
