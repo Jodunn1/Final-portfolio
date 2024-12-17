@@ -317,7 +317,38 @@ html, body {
         width: 100%;
       }
 
+      .slide-in-fwd-center {
+        animation: slide-in-fwd-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
 
+
+      @keyframes slide-in-fwd-center {
+        0% {
+          transform: translateZ(-1400px) translateY(40px);
+          filter: blur(3px);
+          opacity: 1;
+        }
+        100% {
+                  transform: translateZ(0) translateY(0);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+
+      .slide-in1 {
+        width: 1px;
+        height: 1px;
+        position: relative;
+        top: 12rem;
+      }
+
+      .slide-in2 {
+        width: 1px;
+        height: 1px;
+        position: relative;
+        top: 25rem;
+      }
+      
       .about-me {
         display: flex;
         flex-direction: column;
@@ -359,6 +390,7 @@ html, body {
         color: white;
         font-weight: 500;
         width: 70vw;
+        opacity: 0;
       }
 
       .fun-fact {
@@ -380,6 +412,7 @@ html, body {
         width: 70vw;
         position: relative;
         bottom: 4em;
+        opacity: 0;
       }
   
       .fun-fact::after {
@@ -1097,7 +1130,7 @@ html, body {
     }
 
     .about .content-wrapper {
-      height: 100vw;
+      height: 105vw;
     }
   }
 
