@@ -606,6 +606,16 @@ html, body {
   .projects-lists img {
     width: 85%;
 }
+
+  .unplugged-text img,
+  .recipe-app-text img,
+  .sticky-note-text img,
+  .rogue-pickings-text img,
+  .guess-the-word-text img {
+    visibility: hidden;
+    opacity: 0;
+    width: 0px;
+  }
   
   .unplugged .img-background {
     display: flex;
@@ -756,6 +766,8 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     top: -46vw;
   }
   
@@ -890,6 +902,8 @@ html, body {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     top: -46vw;
   }
 
@@ -1066,6 +1080,13 @@ html, body {
     color: white;
     background-color: #2b323a;
     outline: none;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border: 2px solid white;
+  box-shadow: 0 0 10px -1px white;
+  outline: none;
 }
   
   
@@ -1410,7 +1431,7 @@ html, body {
       .recipe-app-text .text-container,
       .rogue-pickings-text .text-container {
         position: relative;
-        bottom: 5vw;
+        bottom: 29vw;
       }
 
       .unplugged-text .text-container,
@@ -1554,7 +1575,7 @@ html, body {
   .recipe-app-text .text-container,
   .rogue-pickings-text .text-container {
     position: relative;
-    bottom: 1vw;
+    bottom: 28vw;
     height: 30vw;
   }
 
@@ -1707,7 +1728,7 @@ html, body {
   .rogue-pickings-text .text-container {
     height: 25vw;
     width: 38%;
-    bottom: -2vw;
+    bottom: 25vw;
   }
 
   .unplugged-text h3,
@@ -1756,10 +1777,41 @@ html, body {
 
   .social-icons a svg {
     width: 3.5vw;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .social-icons a,
+  .social-icons {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .social-icons a svg:hover{
+      animation: text-pop-up-top2 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+
+  .social-icons a img:hover {
+    animation: text-pop-up-top2 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
 
   .social-icons a img {
     width: 5vw;
+    transition: all 0.5s ease-in-out;
+  }
+
+  @-webkit-keyframes text-pop-up-top2 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    100% {
+      -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
   }
 
   .skill-list img {
@@ -1780,271 +1832,229 @@ html, body {
     padding-top: 10vw;
   }
 
+  
 
-  .img-background,
+  .unplugged .img-background,
+  .sticky-note .img-background,
+  .guess-the-word .img-background,
   .unplugged-img-container,
-   .unplugged .img-background,
-   .projects-lists {
-    opacity: 0;
-    background-image: none;
+  .sticky-note-img-container,
+  .guess-the-word-img-container {
     width: 0px;
     height: 0px;
+    visibility: hidden;
+    opacity: 0;
   }
 
-  .projects-laptop {
-    visibility: visible;
-    opacity: 1;
-    width: 100%;
-    height: 600px;
+  .recipe-app .img-background,
+  .rogue-pickings .img-background,
+  .recipe-app-img-container,
+  .rogue-pickings-img-container {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
   }
 
-  .projects-laptop .content-wrapper {
+  .unplugged,
+  .sticky-note,
+  .guess-the-word {
+    height: 55vw;
+  }
+
+  .recipe-app,
+  .rogue-pickings {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-bottom: 6rem;
   }
 
-  .project-text {
-    width: 13%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    justify-content: flex-start;
+    width: 68%;
+    top: 0;
+  }
+
+  .rogue-pickings-text,
+  .recipe-app-text {
+    justify-content: flex-end;
+    width: 68%;
+    top: 0;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1rem;
+    height: 30vw;
+    width: 13rem;
+    left: 24.5rem;
+    padding: 3vw;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1rem;
+    height: 30vw;
+    width: 13rem;
+    left: 24.5rem;
+    padding: 3vw;
+  }
+
+  .unplugged .text-container h3,
+  .sticky-note .text-container h3,
+  .recipe-app .text-container h3,
+  .rogue-pickings-text .text-container h3,
+  .guess-the-word-text .text-container h3 {
+    font-size: 2.8vw;
+  }
+
+  .unplugged .text-container h4,
+  .sticky-note .text-container h4,
+  .recipe-app .text-container h4,
+  .rogue-pickings-text .text-container h4,
+  .guess-the-word-text .text-container h4 {
+    font-size: 1.55vw;
+    margin-bottom: 8vw;
+  }
+
+  .unplugged .text-container .project-link1 a,
+  .unplugged .text-container .project-link2 a,
+  .recipe-app .text-container .project-link1 a,
+  .recipe-app .text-container .project-link2 a,
+  .rogue-pickings .text-container .project-link1 a,
+  .rogue-pickings .text-container .project-link2 a,
+  .sticky-note .text-container .project-link1 a,
+  .sticky-note .text-container .project-link2 a,
+  .guess-the-word .text-container .project-link1 a,
+  .guess-the-word .text-container .project-link2 a {
+    font-size: 1.5vw;
+  }
+
+
+  .unplugged-text img,
+  .sticky-note-text img,
+  .guess-the-word-text img {
+    border-style: solid;
+    border-width: 70px;
+    border-left-width: 0;
+    border-image: radial-gradient(circle 382px at 50% 50.2%, #2f81f7 0.1%, rgb(1, 4, 50) 100.2%);
+    border-image-slice: 50;
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    opacity: 1;
+    width: 55vw;
+    top: 0rem;
+    visibility: visible;
+  }
+
+  .recipe-app-text img,
+  .rogue-pickings-text img {
+    border-style: solid;
+    border-width: 70px;
+    border-right-width: 0;
+    border-image: radial-gradient(circle 382px at 50% 50.2%, #2f81f7 0.1%, rgb(1, 4, 50) 100.2%);
+    border-image-slice: 50;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    opacity: 1;
+    width: 55vw;
+    top: 0rem;
+    visibility: visible;
+  }
+
+  .unplugged-text img:hover, 
+  .unplugged-text:hover img,
+  .sticky-note-text img:hover,
+  .sticky-note-text:hover img,
+  .guess-the-word-text img:hover,
+  .guess-the-word-text:hover img {
+    width: 65vw;
+    border: 2px solid white;
+    border-left-width: 0;
     transition: all 0.5s ease-in-out;
   }
 
-  .project-text img {
-    width: 91%;
-    height: 80%;
-    opacity: 1;
-    visibility: visible;
-    position: relative;
-    border: 2px double white;
-    transition: all ease-in-out 0.5s;
-    object-fit: cover;
-    z-index: 3;
+  .recipe-app-text img:hover,
+  .recipe-app-text:hover img,
+  .rogue-pickings-text img:hover,
+  .rogue-pickings-text:hover img {
+    width: 65vw;
+    border: 2px solid white;
+    border-right-width: 0;
+    transition: all 0.5s ease-in-out;
   }
 
-  .projects-laptop .text-container1 {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    height: 13rem;
-    top: 147.7rem;
-    width: 20.8rem;
-    color: white;
-    background-color: #181818a6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    left: 23rem;
-  }
-  .projects-laptop .text-container2 {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    height: 13rem;
-    top: 147.7rem;
-    width: 20.8rem;
-    color: white;
-    background-color: #181818a6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    left: 29.5rem;
-  }
-  .projects-laptop .text-container3 {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    height: 13rem;
-    top: 147.7rem;
-    width: 20.8rem;
-    color: white;
-    background-color: #181818a6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    left: 36rem;
-  }
-  .projects-laptop .text-container4 {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    height: 13rem;
-    top: 147.7rem;
-    width: 20.8rem;
-    color: white;
-    background-color: #181818a6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    left: -2.2rem;
-  }
-  .projects-laptop .text-container5 {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    height: 13rem;
-    top: 147.7rem;
-    width: 20.8rem;
-    color: white;
-    background-color: #181818a6;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    left: 4.2rem;
-  }
 
-  .text-container1 h3,
-  .text-container2 h3,
-  .text-container3 h3,
-  .text-container4 h3,
-  .text-container5 h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
 
-  .text-container1 h4,
-  .text-container2 h4,
-  .text-container3 h4,
-  .text-container4 h4,
-  .text-container5 h4 {
-    font-size: 0.76rem;
+  .unplugged-text:hover,
+  .sticky-note-text:hover,
+  .guess-the-word-text:hover,
+  .recipe-app-text:hover,
+  .rogue-pickings-text:hover {
+    width: 100%;
   }
-
-  .text-container2 .recipe-h4,
-  .text-container3 .sticky-h4 {
-    margin-bottom: 0;
-  }
-
-  .text-container1 .project-link1 a,
-  .text-container1 .project-link2 a,
-  .text-container2 .project-link1 a,
-  .text-container2 .project-link2 a,
-  .text-container3 .project-link1 a,
-  .text-container3 .project-link2 a,
-  .text-container4 .project-link1 a,
-  .text-container4 .project-link2 a,
-  .text-container5 .project-link1 a,
-  .text-container5 .project-link2 a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.77rem;
-    letter-spacing: 4px;
-    font-weight: 600;
-  }
-
-  .text-container1 .project-link1,
-  .text-container1 .project-link2,
-  .text-container2 .project-link1,
-  .text-container2 .project-link2,
-  .text-container3 .project-link1,
-  .text-container3 .project-link2,
-  .text-container4 .project-link1,
-  .text-container4 .project-link2,
-  .text-container5 .project-link1,
-  .text-container5 .project-link2 {
-    margin-left: 1rem;
-  }
-
-  .text-container1 .project-link1 a::after,
-  .text-container2 .project-link1 a::after,
-  .text-container3 .project-link1 a::after,
-  .text-container4 .project-link1 a::after,
-  .text-container5 .project-link1 a::after {
-    content: "";
-    width: 6rem;
-    height: 0.11rem;
-    background-color: #2f81f7;
-    position: relative;
-    left: -0.5rem;
-  }
-
-  .text-container1 .project-link2 a::after,
-  .text-container2 .project-link2 a::after,
-  .text-container3 .project-link2 a::after,
-  .text-container4 .project-link2 a::after,
-  .text-container5 .project-link2 a::after {
-    content: "";
-    width: 8rem;
-    height: 0.11rem;
-    background-color: #2f81f7;
-    position: relative;
-    left: -0.5rem;
-  }
-
-  .text-container1 .project-link1 a:hover::after,
-  .text-container1 .project-link2 a:hover::after,
-  .text-container2 .project-link1 a:hover::after,
-  .text-container2 .project-link2 a:hover::after,
-  .text-container3 .project-link1 a:hover::after,
-  .text-container3 .project-link2 a:hover::after,
-  .text-container4 .project-link1 a:hover::after,
-  .text-container4 .project-link2 a:hover::after,
-  .text-container5 .project-link1 a:hover::after,
-  .text-container5 .project-link2 a:hover::after {
-    transform: scaleY(14);
-    transform-origin: bottom;
-  }
-
-  .project-text img:hover {
-    width: 99%;
-    height: 44%;
-    transform: translateY(-40%);
-  }
-
-  .project-text:hover img {
-    width: 99%;
-    height: 44%;
-    transform: translateY(-40%);
-  }
-
-  .project-text:hover {
-    width: 45%
-  }
-
-  .project-text:hover .text-container1,
-  .project-text:hover .text-container2,
-  .project-text:hover .text-container3 {
+ 
+  .unplugged-text:hover .text-container,
+  .sticky-note-text:hover .text-container,
+  .guess-the-word-text:hover .text-container {
     visibility: visible;
     opacity: 1;
-    transition: all 0.55s ease-in-out;
-    animation: animate-slide 0.65s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  }
+    animation: animate-slide 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transition: all 0.65s ease-in-out;
+    }
 
-  .project-text:hover .text-container4,
-  .project-text:hover .text-container5 {
+  .recipe-app-text:hover .text-container,
+  .rogue-pickings-text:hover .text-container {
     visibility: visible;
     opacity: 1;
-    transition: all 0.55s ease-in-out;
-    animation: animate-slide2 0.65s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  }
+    animation: animate-slide2 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transition: all 0.65s ease-in-out;
+    }
+
+    @keyframes animate-slide2 {
+      0% {
+        transform: translateX(0%);
+        z-index: -1;
+      }
+  
+      100% {
+        transform: translateX(-150%);
+        z-index: 1;
+      }
+    }
 
   @keyframes animate-slide {
     0% {
       transform: translateX(0%);
+      z-index: -1;
     }
+
     100% {
-      transform: translateX(-98%);
+      transform: translateX(55%);
+      z-index: 1;
     }
   }
 
-  @keyframes animate-slide2 {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(98%);
-    }
+  .blurred-in-bottom {
+    animation: none;
+    opacity: 1;
   }
-
-  #particles-js {
-    height: 403vmax;
-  }
-
 }
   
   
