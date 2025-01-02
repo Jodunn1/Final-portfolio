@@ -2049,7 +2049,7 @@ html, body {
   }
 
   .blurred-in-bottom {
-    animation: none;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000)  both;
     opacity: 1;
   }
 
@@ -2364,6 +2364,19 @@ html, body {
   }
 }
 
+@media screen and (min-width: 1350px) {
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 38rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 45rem;
+  }
+}
+
 @media screen and (min-width: 1400px) {
 
   header h2 {
@@ -2571,6 +2584,13 @@ html, body {
     }
 }
 
+@media screen and (min-width: 1650px) {
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 66rem;
+  }
+}
+
 @media screen and (min-width: 1700px) {
   .unplugged-text,
   .sticky-note-text,
@@ -2595,6 +2615,13 @@ html, body {
   }
 }
 
+@media screen and (min-width: 1750px) {
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 72rem;
+  }
+}
+
 @media screen and (min-width: 1800px) {
   .unplugged-text,
   .sticky-note-text,
@@ -2616,6 +2643,13 @@ html, body {
   .recipe-app .text-container,
   .rogue-pickings .text-container {
     left: 74rem;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 78rem;
   }
 }
 
