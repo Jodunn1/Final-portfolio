@@ -310,7 +310,7 @@ html, body {
         width: 100%;
         height: 120vw;
         overflow: hidden;
-        padding-top: 50px;
+        padding-top: 100px;
       }
   
       #about {
@@ -709,12 +709,12 @@ html, body {
     transition: all 0.25s;
     transform-origin: bottom;
     display: block;
-    left: 1vw;
+    left: 0.5rem;
   }
   
   .project-link2 a::after {
     position: relative;
-    left: 1vw;
+    left: 0.5rem;
     width: 100%;
     transition: all 0.25s;
     transform-origin: bottom;
@@ -869,12 +869,12 @@ html, body {
     transition: all 0.25s;
     transform-origin: bottom;
     display: block;
-    left: 1vw;
+    left: 0.5rem;
   }
   
   .sticky-note .project-link2 a::after {
     position: relative;
-    left: 1vw;
+    left: 0.5rem;
     width: 100%;
     transition: all 0.25s;
     transform-origin: bottom;
@@ -1012,12 +1012,12 @@ html, body {
     transition: all 0.25s;
     transform-origin: bottom;
     display: block;
-    left: 1vw;
+    left: 0.5rem;
   }
   
   .guess-the-word .project-link2 a::after {
     position: relative;
-    left: 1vw;
+    left: 0.5rem;
     width: 100%;
     transition: all 0.25s;
     transform-origin: bottom;
@@ -1025,10 +1025,6 @@ html, body {
   }
   
   /** Contact section **/
-
-  #contact {
-    padding-top: 10vw;
-  }
   
   .contact-header h2 {
     color: white;
@@ -1058,7 +1054,6 @@ html, body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    border-radius: 8px;
     width: 80%;
     height: 70vw;  
   }
@@ -1344,7 +1339,7 @@ html, body {
 
       /* Skills */
       .skills {
-        height: 50vw;
+        height: 25rem;
       }
 
       .skill-list {
@@ -1426,6 +1421,7 @@ html, body {
         margin: 3vw 0;
         height: 10vw;
         line-height: 2.8vw;
+        padding-bottom: 4vw;
       }
 
       .recipe-app-text .text-container,
@@ -1513,7 +1509,7 @@ html, body {
 
 
   .contact-form button:hover:after {
-    transform: scaleY(17);
+    transform: scaleY(18);
   }
 
   .project-link1 a:hover::after {
@@ -1558,9 +1554,10 @@ html, body {
   .rogue-pickings-text h4,
   .guess-the-word-text h4 {
     font-size: 2vw;
-    margin: 2vw 0 4vw 0;
-    height: 10vw;
-    line-height: 2.5vw;
+    margin: 1rem 0 2rem 0;
+    height: 5rem;
+    line-height: 1.3rem;
+    padding-bottom: 0;
   }
 
   .unplugged-text,
@@ -1590,7 +1587,7 @@ html, body {
   
 
   .project-link1 {
-    margin-bottom: 2vw;
+    margin-bottom: 1rem;
   }
 
   .project-link1 a,
@@ -1638,7 +1635,7 @@ html, body {
   }
 
   .contact-form button::after {
-    width: 108px;
+    width: 115px;
   }
 
 }
@@ -1648,16 +1645,16 @@ html, body {
 
   header h2 {
     justify-content: flex-start;
-    padding-left: 5vw;
+    padding-left: 2rem;
     }
 
   .h3-container {
     justify-content: flex-start;
-    padding-left: 5vw;
+    padding-left: 2rem;
     }
 
   header h3 {
-      width: 60%;
+      width: 30rem;
       font-size: 2.1vw;
       text-align: start;
     }
@@ -1665,8 +1662,8 @@ html, body {
 
   .button-container {
     justify-content: flex-start;
-    padding-left: 5vw;
-    margin-top: 2.5vw;
+    padding-left: 2rem;
+    margin-top: 1.3rem;
   }
 
   .button-wrapper {
@@ -1675,24 +1672,25 @@ html, body {
   }
 
   .button-wrapper a {
-    font-size: 2.1vw;
-    padding-right: 1vw;
+    font-size: 0.9rem;
+    padding-right: 0.4rem;
   }
 
   .button-wrapper a svg {
-    width: 4vw;
+    width: 2rem;
   }
 
   .social-icons {
-    width: 17%;
-    bottom: 9vw;
+    width: 9rem;
+    bottom: 4rem;
     position: relative;
-    right: -32vw;
+    right: -16rem;
     margin-left: 0;
+    height: 5.7rem;
   }
 
   .social-icons a {
-    margin: 0 2vw;
+    margin: 0 1.1rem;
   }
 
   .social-icons a svg {
@@ -1704,7 +1702,7 @@ html, body {
   }
 
   #particles-js {
-    height:610vmax;
+    height:600vh;
   }
 
   .about-desc,
@@ -1747,6 +1745,11 @@ html, body {
     font-size: 1.8vw;
   }
 
+  .unplugged-text h4,
+  .recipe-app-text h4 {
+    font-size: 1.65vw;
+  }
+
   .project-link1 a,
   .project-link2 a {
     font-size: 1.8vw;
@@ -1755,20 +1758,16 @@ html, body {
 
 @media screen and (min-width: 800px) {
   header h2 {
-    font-size: 6vw;
+    font-size: 3rem;
   }
 
   header h3 {
-    font-size: 2vw;
-  }
-
-  .button-wrapper a {
-    font-size: 1.8vw;
+    font-size: 1rem;
   }
 
   .button-wrapper {
-    width: 20vw;
-    height: 4vw;
+    width: 10rem;
+    height: 2rem;
   }
 
   .about .content-wrapper {
@@ -1776,27 +1775,26 @@ html, body {
   }
 
   .social-icons a svg {
-    width: 3.5vw;
-    transition: all 0.5s ease-in-out;
+    width: 1.8rem;
+    transition: all 0.4s ease-in-out;
   }
 
   .social-icons a,
   .social-icons {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
 
   .social-icons a svg:hover{
-      animation: text-pop-up-top2 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+      width: 2.6rem;
   }
 
-
   .social-icons a img:hover {
-    animation: text-pop-up-top2 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    width: 3.3rem;
   }
 
   .social-icons a img {
-    width: 5vw;
-    transition: all 0.5s ease-in-out;
+    width: 2.5rem;
+    transition: all 0.4s ease-in-out;
   }
 
   @-webkit-keyframes text-pop-up-top2 {
@@ -1829,10 +1827,9 @@ html, body {
 
 
   .project-h2 h2 {
-    padding-top: 10vw;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
   }
-
-  
 
   .unplugged .img-background,
   .sticky-note .img-background,
@@ -1874,14 +1871,14 @@ html, body {
   .sticky-note-text,
   .guess-the-word-text {
     justify-content: flex-start;
-    width: 68%;
+    width: 65%;
     top: 0;
   }
 
   .rogue-pickings-text,
   .recipe-app-text {
     justify-content: flex-end;
-    width: 68%;
+    width: 65%;
     top: 0;
   }
 
@@ -1892,10 +1889,10 @@ html, body {
     opacity: 0;
     position: absolute;
     top: -1rem;
-    height: 30vw;
+    height: 15.5rem;
     width: 13rem;
     left: 24.5rem;
-    padding: 3vw;
+    padding: 1.5rem;
   }
 
   .recipe-app .text-container,
@@ -1904,10 +1901,10 @@ html, body {
     opacity: 0;
     position: absolute;
     top: -1rem;
-    height: 30vw;
+    height: 15.5rem;
     width: 13rem;
     left: 24.5rem;
-    padding: 3vw;
+    padding: 1.5rem;
   }
 
   .unplugged .text-container h3,
@@ -1915,7 +1912,7 @@ html, body {
   .recipe-app .text-container h3,
   .rogue-pickings-text .text-container h3,
   .guess-the-word-text .text-container h3 {
-    font-size: 2.8vw;
+    font-size: 1.4rem;
   }
 
   .unplugged .text-container h4,
@@ -1923,8 +1920,8 @@ html, body {
   .recipe-app .text-container h4,
   .rogue-pickings-text .text-container h4,
   .guess-the-word-text .text-container h4 {
-    font-size: 1.55vw;
-    margin-bottom: 8vw;
+    font-size: 0.78rem;
+    margin-bottom: 4rem;
   }
 
   .unplugged .text-container .project-link1 a,
@@ -1937,7 +1934,7 @@ html, body {
   .sticky-note .text-container .project-link2 a,
   .guess-the-word .text-container .project-link1 a,
   .guess-the-word .text-container .project-link2 a {
-    font-size: 1.5vw;
+    font-size: 0.77rem;
   }
 
 
@@ -1955,7 +1952,7 @@ html, body {
     transition: all 0.5s ease-in-out;
     position: relative;
     opacity: 1;
-    width: 55vw;
+    width: 57vw;
     top: 0rem;
     visibility: visible;
   }
@@ -1973,7 +1970,7 @@ html, body {
     transition: all 0.5s ease-in-out;
     position: relative;
     opacity: 1;
-    width: 55vw;
+    width: 57vw;
     top: 0rem;
     visibility: visible;
   }
@@ -1984,7 +1981,7 @@ html, body {
   .sticky-note-text:hover img,
   .guess-the-word-text img:hover,
   .guess-the-word-text:hover img {
-    width: 65vw;
+    width: 64vw;
     border: 2px solid white;
     border-left-width: 0;
     transition: all 0.5s ease-in-out;
@@ -1994,7 +1991,7 @@ html, body {
   .recipe-app-text:hover img,
   .rogue-pickings-text img:hover,
   .rogue-pickings-text:hover img {
-    width: 65vw;
+    width: 64vw;
     border: 2px solid white;
     border-right-width: 0;
     transition: all 0.5s ease-in-out;
@@ -2054,6 +2051,595 @@ html, body {
   .blurred-in-bottom {
     animation: none;
     opacity: 1;
+  }
+
+  .input-field input {
+    height: 2.5rem;
+  }
+
+  .input-field textarea {
+    height: 10rem;
+    padding-top: 0.7rem;
+  }
+
+  .contact-header form {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 27.5rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 25rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 30rem;
+    top: -0.5rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 25.5rem;
+    top: -0.5rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 33rem;
+    top: 0;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    top: 0rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 34rem;
+    width: 14rem;
+    top: 7px;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 28rem;
+    width: 14rem;
+    top: 7px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 36.5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  #particles-js {
+    height: 600vh;
+  }
+
+  .value {
+    margin: 0 40px;
+  }
+
+  .input value a {
+    font-size: 1rem;
+  }
+
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    width: 42rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    width: 42rem;
+  }
+
+  .unplugged,
+  .sticky-note,
+  .guess-the-word {
+    height: 37rem;
+  }
+
+  .recipe-app,
+  .rogue-pickings {
+    margin-bottom: 10rem;
+  }
+
+  .unplugged-text img,
+  .sticky-note-text img,
+  .guess-the-word-text img {
+    width: 38rem;
+  }
+
+  .recipe-app-text img,
+  .rogue-pickings-text img {
+    width: 38rem;
+  }
+
+  .unplugged-text img:hover, 
+  .unplugged-text:hover img,
+  .sticky-note-text img:hover,
+  .sticky-note-text:hover img,
+  .guess-the-word-text img:hover,
+  .guess-the-word-text:hover img {
+    width: 45rem;
+  }
+
+  .recipe-app-text img:hover,
+  .recipe-app-text:hover img,
+  .rogue-pickings-text img:hover,
+  .rogue-pickings-text:hover img {
+    width: 45rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 37rem;
+    width: 16rem;
+    top: 25px;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 31rem;
+    width: 16rem;
+    top: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  header h2 {
+    font-size: 3.5rem;
+    padding-left: 4rem;
+  }
+
+  header h3 {
+    font-size: 1.1rem;
+  }
+
+  .h3-container {
+    padding-left: 4rem;
+  }
+
+  .button-container {
+    padding-left: 4rem;
+  }
+
+  .recipe-app .project-link1 {
+    margin-bottom: 1.5vw;
+  }
+
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    position: relative;
+    left: 2rem;
+    width: 49rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    width: 49rem;
+    position: relative;
+    right: 2rem;
+  }
+
+  .unplugged-text img,
+  .sticky-note-text img,
+  .guess-the-word-text img,
+  .recipe-app-text img,
+  .rogue-pickings-text img {
+    left: 0;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 35rem;
+  }
+
+  .unplugged-text img,
+  .sticky-note-text img,
+  .guess-the-word-text img {
+    border-left-width: 70px;
+    border-radius: 10px;
+  }
+
+  .recipe-app-text img,
+  .rogue-pickings-text img {
+    border-right-width: 70px;
+    border-radius: 10px;
+  }
+
+  .unplugged-text img:hover, 
+  .unplugged-text:hover img,
+  .sticky-note-text img:hover,
+  .sticky-note-text:hover img,
+  .guess-the-word-text img:hover,
+  .guess-the-word-text:hover img {
+    border: 2px solid white;
+  }
+
+  .recipe-app-text img:hover,
+  .recipe-app-text:hover img,
+  .rogue-pickings-text img:hover,
+  .rogue-pickings-text:hover img {
+    border: 2px solid white;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    left: 5rem;
+  }
+
+  .recipe-app-text,    
+  .rogue-pickings-text {
+    right: 5rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 39rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 38rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .about .content-wrapper {
+    width: 41rem;
+  }
+
+  .skills {
+    width: 38rem;
+    padding-top: 6rem;
+  }
+
+  .skills svg {
+    bottom: 440px;
+    height: 11vw;
+  }
+
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    left: 6rem;
+  }
+
+  .recipe-app-text,    
+  .rogue-pickings-text {
+    right: 6rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 40rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 40rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  header h2 {
+    font-size: 4rem;
+  }
+
+  header h3 {
+    font-size: 1.15rem;
+  }
+
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    left: 7rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    right: 7rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 41rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 45rem;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 48rem;
+    width: 17rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    width: 17rem;
+  }
+
+  .unplugged .text-container .project-link1 a,
+  .unplugged .text-container .project-link2 a,
+  .recipe-app .text-container .project-link1 a,
+  .recipe-app .text-container .project-link2 a,
+  .rogue-pickings .text-container .project-link1 a,
+  .rogue-pickings .text-container .project-link2 a,
+  .sticky-note .text-container .project-link1 a,
+  .sticky-note .text-container .project-link2 a,
+  .guess-the-word .text-container .project-link1 a,
+  .guess-the-word .text-container .project-link2 a {
+    font-size: 0.8rem;
+  }
+
+  .unplugged .text-container h4,
+  .sticky-note .text-container h4,
+  .recipe-app .text-container h4,
+  .rogue-pickings-text .text-container h4,
+  .guess-the-word-text .text-container h4 {
+    font-size: 0.82rem;
+  }
+
+  .unplugged .text-container h3,
+  .sticky-note .text-container h3,
+  .recipe-app .text-container h3,
+  .rogue-pickings-text .text-container h3,
+  .guess-the-word-text .text-container h3 {
+    font-size: 1.56rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    position: relative;
+    left: 10rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    position: relative;
+    right: 10rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 40rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 53rem;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 56rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    position: relative;
+    right: 13rem;
+  }
+
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    position: relative;
+    left: 13rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+
+  .unplugged-text img,
+  .sticky-note-text img,
+  .guess-the-word-text img {
+    width: 41rem;
+  }
+
+  .recipe-app-text img,
+  .rogue-pickings-text img {
+    width: 41rem;
+  }
+
+  .unplugged-text img:hover, 
+  .unplugged-text:hover img,
+  .sticky-note-text img:hover,
+  .sticky-note-text:hover img,
+  .guess-the-word-text img:hover,
+  .guess-the-word-text:hover img {
+    width: 48rem;
+  }
+
+  .recipe-app-text img:hover,
+  .recipe-app-text:hover img,
+  .rogue-pickings-text img:hover,
+  .rogue-pickings-text:hover img {
+    width: 48rem;
+  }
+
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    position: relative;
+    left: 11rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    position: relative;
+    right: 11rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 36rem;
+    width: 24rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 63rem;
+    width: 24rem;
+  }
+
+  .unplugged .text-container h3,
+  .sticky-note .text-container h3,
+  .guess-the-word .text-container h3,
+  .recipe-app .text-container h3,
+  .rogue-pickings .text-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .unplugged .text-container h4,
+  .sticky-note .text-container h4,
+  .guess-the-word .text-container h4,
+  .recipe-app .text-container h4,
+  .rogue-pickings .text-container h4 {
+    font-size: 0.9rem;
+  }
+
+    .unplugged .text-container .project-link1 a,
+    .unplugged .text-container .project-link2 a,
+    .recipe-app .text-container .project-link1 a,
+    .recipe-app .text-container .project-link2 a,
+    .rogue-pickings .text-container .project-link1 a,
+    .rogue-pickings .text-container .project-link2 a,
+    .sticky-note .text-container .project-link1 a,
+    .sticky-note .text-container .project-link2 a,
+    .guess-the-word .text-container .project-link1 a,
+    .guess-the-word .text-container .project-link2 a {
+      font-size: 0.79rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    left: 14rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    right: 14rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 36rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 69rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    left: 16rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    right: 16rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 36rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 74rem;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .unplugged-text,
+  .sticky-note-text,
+  .guess-the-word-text {
+    left: 18rem;
+  }
+
+  .recipe-app-text,
+  .rogue-pickings-text {
+    right: 18rem;
+  }
+
+  .unplugged .text-container,
+  .sticky-note .text-container,
+  .guess-the-word .text-container {
+    left: 36rem;
+  }
+
+  .recipe-app .text-container,
+  .rogue-pickings .text-container {
+    left: 80rem;
   }
 }
   
