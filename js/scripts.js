@@ -601,6 +601,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Use Intersection Observer to determine if objects are within the viewport
 	const observer = new IntersectionObserver(entries => {
+        const blurredright = document.querySelector('.blurred11');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          blurredright.classList.add('blurred-in-bottom');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        blurredright.classList.remove('blurred-in-bottom');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.blurredanimate6');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
+        const blurredright = document.querySelector('.blurred12');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          blurredright.classList.add('blurred-in-bottom');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        blurredright.classList.remove('blurred-in-bottom');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.blurredanimate6');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
         const slidein = document.querySelector('.slided1');
 	  entries.forEach(entry => {
 		if (entry.isIntersecting) {
