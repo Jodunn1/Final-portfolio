@@ -326,6 +326,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Use Intersection Observer to determine if objects are within the viewport
 	const observer = new IntersectionObserver(entries => {
+        const skillappear = document.querySelector('.pop7');
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('in-view');
+          skillappear.classList.add('pop1');  
+		  return;
+		}
+		entry.target.classList.remove('in-view');
+        skillappear.classList.remove('pop1');
+	  }
+    );
+	});
+
+	// Get all the elements with the .animate class applied
+	const allAnimatedElements = document.querySelectorAll('.skill-appear');
+
+	// Add the observer to each of those elements
+	allAnimatedElements.forEach((element) => observer.observe(element));
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+	// Use Intersection Observer to determine if objects are within the viewport
+	const observer = new IntersectionObserver(entries => {
         const blurredright = document.querySelector('.blurred1');
 	  entries.forEach(entry => {
 		if (entry.isIntersecting) {
