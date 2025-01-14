@@ -2917,3 +2917,48 @@ form {
     left: 80rem;
   }
 }
+
+@media prefers-reduced-motion {
+  header h3 {
+    animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) 4.3s both;
+  }
+
+  .button-wrapper {
+    animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) 4.3s both;
+  }
+
+  .social-icons {
+    animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) 4.4s both;
+  }
+
+  .value:not(:active):hover,
+  .value:focus {
+    animation: shadow-drop-2-center 4.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .slide-in-fwd-center {
+    animation: slide-in-fwd-center 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .pop1 {
+    animation: text-pop-up-top 4.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  .blurred-in-bottom {
+    animation: fade-in-bottom 4.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  .unplugged-text:hover .text-container,
+  .sticky-note-text:hover .text-container,
+  .supervillain-text:hover .text-container {
+    animation: animate-slide 4.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transition: all 4.65s ease-in-out;
+  }
+
+  .recipe-app-text:hover .text-container,
+  .rogue-pickings-text:hover .text-container,
+  .guess-the-word-text:hover .text-container {
+    animation: animate-slide2 4.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transition: all 4.65s ease-in-out;
+  }
+}
