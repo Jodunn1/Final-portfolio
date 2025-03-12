@@ -2046,7 +2046,7 @@ form {
     top: -1rem;
     height: 15.5rem;
     width: 13rem;
-    left: 24.5rem;
+    left: 25.5rem;
     padding: 1.5rem;
   }
 
@@ -2088,6 +2088,7 @@ form {
     margin-bottom: 4rem;
     padding: 0;
   }
+
 
   .unplugged .text-container .project-link1 a,
   .unplugged .text-container .project-link2 a,
@@ -2401,7 +2402,7 @@ form {
   .recipe-app .text-container,
   .rogue-pickings .text-container,
   .guess-the-word .text-container {
-    left: 31rem;
+    left: 32rem;
     width: 16rem;
     top: 25px;
   }
@@ -2455,10 +2456,10 @@ form {
     left: 0;
   }
 
-  .recipe-app .text-container,
+  /*.recipe-app .text-container,
   .rogue-pickings .text-container {
     left: 35rem;
-  }
+  }*/
 
   .unplugged-text img,
   .sticky-note-text img,
@@ -2490,6 +2491,10 @@ form {
   .guess-the-word-text img:hover,
   .guess-the-word-text:hover img {
     border: 2px solid white;
+  }
+
+  .rogue-pickings .text-container h4 {
+    margin-bottom: 2rem;
   }
 }
 
@@ -2563,7 +2568,7 @@ form {
   .recipe-app .text-container,
   .rogue-pickings .text-container,
   .guess-the-word .text-container {
-    left: 40rem;
+    left: 43rem;
   }
 }
 
