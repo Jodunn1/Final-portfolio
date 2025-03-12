@@ -1214,7 +1214,6 @@ form {
   background: none;
   font-weight: 500;
   cursor: pointer;
-  width: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
