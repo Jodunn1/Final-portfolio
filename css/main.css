@@ -1626,7 +1626,7 @@ form {
   }
 
   .contact-form button:after {
-    width: 80%;
+    width: 125%;
   }
 
   .contact-form button:hover:after {
@@ -1867,14 +1867,14 @@ form {
 
   .unplugged .text-container,
   .sticky-note-text .text-container,
-  .guess-the-word-text .text-container,
   .supervillain-text .text-container {
     height: 27vw;
-    width: 34%;
+    width: 38%;
     bottom: -1vw;
   }
 
   .recipe-app-text .text-container,
+  .guess-the-word-text .text-container,
   .rogue-pickings-text .text-container {
     height: 27vw;
     width: 34%;
@@ -2149,7 +2149,7 @@ form {
   .supervillain-text img:hover,
   .supervillain-text:hover img {
     width: 64vw;
-    border: 2px solid white;
+    border-width: 0px;
     border-left-width: 0;
     transition: all 0.5s ease-in-out;
   }
@@ -2161,7 +2161,7 @@ form {
   .guess-the-word-text img:hover,
   .guess-the-word-text:hover img {
     width: 64vw;
-    border: 2px solid white;
+    border-width: 0px;
     border-right-width: 0;
     transition: all 0.5s ease-in-out;
   }
@@ -2480,7 +2480,7 @@ form {
   .sticky-note-text:hover img,
   .supervillain-text img:hover,
   .supervillain-text:hover img {
-    border: 2px solid white;
+    border-width: 0px;
   }
 
   .recipe-app-text img:hover,
@@ -2489,7 +2489,7 @@ form {
   .rogue-pickings-text:hover img,
   .guess-the-word-text img:hover,
   .guess-the-word-text:hover img {
-    border: 2px solid white;
+    border-width: 0px;
   }
 
   .rogue-pickings .text-container h4 {
