@@ -1169,7 +1169,7 @@ header h3 {
 
 form {
   position: relative;
-  height: 70vmin;
+  height: 64vmin;
   display: flex;
   justify-content: center;
 }
@@ -1638,7 +1638,7 @@ form {
   }
 
   .contact-form {
-    height: 60vw;
+    height: 44vw;
     width: 75%;
   }
 }
